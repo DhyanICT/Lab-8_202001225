@@ -127,7 +127,4 @@ public class BoaTest {
   }
 }
 ```
-- By invoking the lengthInInches() method on two Boa objects (jen and ken) created in the setUp() method and confirming that the returned values are accurate using the assertEquals() method, the testLengthInInches() function evaluates the lengthInInches() method of the Boa class. This method should be executed as a JUnit test, according to the @Test annotation.
-The JUnit window should show a green bar after the tests have been run, indicating that each test has been passed.
-
- 
+- By invoking the lengthInInches() method on two Boa objects (jen and ken) created in the setUp() method and confirming that the returned values are accurate using the assertEquals() method, the testLengthInInches() function evaluates the lengthInInches() method of the Boa class. This method should be executed as a JUnit test, according to the @Test annotation. The JUnit window should show a green bar after the tests have been run, indicating that each test has been passed.
