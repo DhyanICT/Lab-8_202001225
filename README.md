@@ -18,4 +18,38 @@
   ![image](https://user-images.githubusercontent.com/124245399/233317177-4f784b1c-a1bd-49b2-9e82-8d642ff6e389.png)
 
 <h2> Creating test case for Boa class </h2>
-![image](https://user-images.githubusercontent.com/124245399/233324141-805b86fa-0af3-43e0-9d9c-e3d697a3606a.png)
+
+```
+public class BoaTest {
+
+  @Test
+  public void testIsHealthyWithFavoriteFood() {
+    Boa boa = new Boa("Bob", 10, "granola bars");
+    assertTrue(boa.isHealthy());
+  }
+
+  @Test
+  public void testIsHealthyWithoutFavoriteFood() {
+    Boa boa = new Boa("Sally", 8, "mice");
+    assertFalse(boa.isHealthy());
+  }
+
+  @Test
+  public void testFitsInCageWithExactLength() {
+    Boa boa = new Boa("Charlie", 6, "chicken");
+    assertTrue(boa.fitsInCage(6));
+  }
+
+  @Test
+  public void testFitsInCageWithLargerCage() {
+    Boa boa = new Boa("Lucy", 5, "rats");
+    assertTrue(boa.fitsInCage(10));
+  }
+
+  @Test
+  public void testFitsInCageWithSmallerCage() {
+    Boa boa = new Boa("Frank", 4, "eggs");
+    assertFalse(boa.fitsInCage(3));
+  }
+}
+```
